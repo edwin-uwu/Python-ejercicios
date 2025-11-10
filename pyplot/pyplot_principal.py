@@ -18,16 +18,16 @@ print('--------------------')
 
 #plt.show();
 #Tipo de gráficas
-x = np.random.random([50]);
-y = np.random.random([50]);
-print(x);
-print(y);
+#x = np.random.random([50]);
+#y = np.random.random([50]);
+#print(x);
+#print(y);
 #Scatter plot grafica por puntos
 #plt.scatter(x,y)
 
 #Bar plot gráfica de barras
-opciones=['si','no'];
-resultados=[40,50];
+#opciones=['si','no'];
+#resultados=[40,50];
 #plt.bar(opciones,resultados);
 
 #Histogramas
@@ -37,5 +37,18 @@ resultados=[40,50];
 #plt.boxplot(x);
 
 #pie plot
-plt.pie(resultados,labels=opciones);
+#plt.pie(resultados,labels=opciones);
+
+print('--------------------')
+#Tamaños, colores, estilos de linea y marcadores
+
+y = np.array([1,4.3,17,16.8,30,25,50,45,100]);
+x = np.array([1,2,3,4,5,6,7,8,9]);
+
+
+#Largo y Ancho
+plt.figure(figsize=(12,6));
+plt.grid();
+#plt.plot(x,y,'o:b') Azul
+plt.plot(x,y,'o--',c='purple',mfc='red',mec='green',ms='10');
 plt.show();
