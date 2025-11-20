@@ -23,5 +23,5 @@ print(df3.iloc[7]);#Obtener datos por filas
 
 #Rangos y filtrado de datos
 
-print(df3.iloc[37:]);
-print("\n",df3[(df3['distance'] > 6) & (df3['climb']> 5)])
+print('Filtrado\n',df3.iloc[:37]);
+#print("\n",df3[(df3['distance'] > 6) & (df3['climb']> 5)])
