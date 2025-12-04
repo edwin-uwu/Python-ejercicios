@@ -16,3 +16,16 @@ df4_sin_nulos_filas = df4.dropna();
 df4_sin_nulos_columnas = df4.dropna(axis=1);
 print('Normal\n',df4_sin_nulos_filas);
 print('Columnas\n',df4_sin_nulos_columnas);
+
+df41 = df4.dropna(how='any');
+print(df41);
+df42 = df4.fillna(0);
+print('Reemplazado valores nulos por 0\n',df42);
+
+# ⚠️ Obsoleto desde pandas 2.0:
+print('Reemplazado nulos por el anterior número')
+print(s1.ffill())
+print(df4.ffill())
+print('Reemplazado nulos por el siguiente número');
+print(s1.bfill())
+print(df4.bfill())
